@@ -1,0 +1,63 @@
+*::after,
+::before,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card {
+  height: 80vh;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 425px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+  padding: 0.75rem;
+}
+
+.action-button {
+  font-size: 1rem;
+  padding: 0.5em;
+  width: 100px;
+  background-color: #6658d3;
+  border-radius: 6px;
+  color: #fff;
+  border: 0;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.action-button:hover {
+  cursor: pointer;
+}
+
+#err {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button{
+  margin-left: 0;
+}

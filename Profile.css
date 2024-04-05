@@ -1,0 +1,21 @@
+.card {
+  height: 70vh;
+  text-align: center;
+}
+
+.navbar {
+  margin: 9px;
+}
+
+#card-format {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  font-size: 18px;
+}
+
+#visible {
+  display: none;
+}
+

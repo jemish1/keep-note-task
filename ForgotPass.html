@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Registration.css" />
+    <title>Forgot Password</title>
+  </head>
+  <body>
+    <div class="card">
+
+      <div id="err"></div>
+
+      <div id="title">Forgot password</div><br>
+      
+      <div id="form">
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div>
+        <label for="password">Enter New Password:</label>
+        <input type="password" id="password1" />
+      </div>
+      
+      <div>
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="password2" />
+      </div>
+
+      <div class="forbtn">
+        <button class="action-button" type="submit" onclick="chengePassword()">Change</button>
+      </div>
+    </div>
+    <div>
+    <script src="./ForgotPass.js"></script>
+  </body>
+</html>

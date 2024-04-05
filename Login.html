@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Registration.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="card">
+
+      <div id="err"></div>
+
+      <div id="title">Login</div><br>
+      
+      <div id="form">
+
+      <div id="foremail">
+        <label for="email">Email:</label>
+        <input type="text" id="email" />
+      </div>
+
+      <div id="forpassword">
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+      </div>
+
+      <div>
+        Forgot Password? <a href="ForgotPass.html">click here</a>
+      </div>
+
+      <div>
+        You Don't have account? <a href="index.html">click here</a>
+      </div>
+
+      <div class="forbtn">
+        <button class="action-button" type="submit" onclick="validateAndLogin()">Login</button>
+      </div>
+    </div>
+    <div>
+    <script src="./Login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Dashbord.css" />
+    <title>Dashbord</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <ul>
+          <li><a href="Dashbord.html">Dashbord</a></li>
+          <li><a href="Profile.html">Profile</a></li>
+        </ul>
+        <div class="btn">
+          <button onclick="logOut()">Logout</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mainDiv">
+      <div class="side-bar">
+        <div id="temp"></div>
+        <div id="img"></div>
+        <div id="currTime"></div>
+        <div id="taskListC"></div>
+        <div id="taskListP"></div>
+      </div>
+
+      <div class="taskBoard">
+        <div class="createNote">
+          <textarea id="note" cols="50" rows="1"></textarea>
+          <button class="add_btn" onclick="addNote()">Add</button>
+        </div>
+
+        <div class="notes-card"></div>
+      </div>
+    </div>
+    <script src="Dashbord.js"></script>
+  </body>
+</html>
