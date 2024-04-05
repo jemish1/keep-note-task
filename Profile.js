@@ -38,7 +38,7 @@ function changeUserData() {
   const email = document.getElementById("email").value;
   const mobileNumber = document.getElementById("mobile").value;
   const date = document.getElementById("date").value;
-  const gender = document.querySelector('input[name="gender"]:checked').value;
+  const gender = document.querySelector('input[name="gender"]:checked');
   const err = document.getElementById("err");
 
   if (
@@ -46,7 +46,7 @@ function changeUserData() {
     email == "" ||
     date == "" ||
     mobileNumber == "" ||
-    gender == ""
+    gender.value == ""
   ) {
     err.innerText = "Please fill out Empty field.";
 
@@ -60,10 +60,10 @@ function changeUserData() {
       err.innerText = "Email is InValid";
     }
 
-    if (name && isValidMobileNum(mobileNumber) && gender && date) {
+    if (name && isValidMobileNum(mobileNumber) && gender.value && date) {
       localStorage.setItem("name", name);
       localStorage.setItem("mobile", mobileNumber);
-      localStorage.setItem("gender", gender);
+      localStorage.setItem("gender", gender.value);
       localStorage.setItem("date", date);
     }
 
