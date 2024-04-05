@@ -20,7 +20,7 @@ function handleFormValidation() {
   const mobileNumber = document.getElementById("mobile").value;
   const password = document.getElementById("password").value;
   const date = document.getElementById("date").value;
-  const gender = document.querySelector('input[name="gender"]:checked').value;
+  const gender = document.querySelector('input[name="gender"]:checked');
   const err = document.getElementById("err");
 
   if (
@@ -29,7 +29,7 @@ function handleFormValidation() {
     date == "" ||
     mobileNumber == "" ||
     password == "" ||
-    gender == ""
+    gender.checked == ""
   ) {
     err.innerText = "Please fill out Empty field.";
 
@@ -50,10 +50,10 @@ function handleFormValidation() {
         "Email is InValid or Password must contain at least one number,one special, one lowercase, one uppercase, and be at least 8 characters long";
     }
 
-    if (name && isValidMobileNum(mobileNumber) && gender && date) {
+    if (name && isValidMobileNum(mobileNumber) && gender.checked && date) {
       localStorage.setItem("name", name);
       localStorage.setItem("mobile", mobileNumber);
-      localStorage.setItem("gender", gender);
+      localStorage.setItem("gender", gender.checked);
       localStorage.setItem("date", date);
     }
   }
