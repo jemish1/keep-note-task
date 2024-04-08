@@ -62,14 +62,14 @@ const randomNum = Math.floor(Math.random() * 51);
 fetchImage().then((Img) => {
   document.getElementById(
     "img"
-  ).innerHTML = `<Image src="${Img.data[randomNum].images.original.url}"> </Image>`;
+  ).innerHTML = `<img src="${Img.data[randomNum].images.original.url}"> </img>`;
 });
 
 const ImageInterval = setInterval(() => {
   fetchImage().then((Img) => {
     document.getElementById(
       "img"
-    ).innerHTML = `<image src="${Img.data[randomNum].images.original.url}"> </image>`;
+    ).innerHTML = `<img src="${Img.data[randomNum].images.original.url}"> </img>`;
   });
 }, 120000);
 
